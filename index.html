@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!--Fonts &icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <h1>Portfolio Survey Form</h1>
+        <p>Thank you for taking the time to help me improve my work</p>
+    </div>
+
+    <div class="survey">
+
+        <form>
+        <div class="name">
+            <p>Name:</p>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="email">
+            <p>E-mail:</p>
+            <input type="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="age">
+            <p>Age (optional)</p>
+            <input type="number" min=0 max=150 placeholder="Enter your age">
+        </div>
+
+        <div class="role">
+            <p>Which option best describes your current role?</p>
+            <select>
+                <option value="" selected disabled>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Employee">Employee</option>
+                <option value="Employer">Employer</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="hire">
+            <p>Would you employ me based on my portfolio?</p>
+            <span>
+                <input type="radio" name="hire" value="Definietly" checked>
+                <label >Definietly</label>
+            </span>
+            <span>
+                <input type="radio" name="hire" value="Maybe">
+                <label >Maybe</label>
+            </span>
+            <span>
+                <input type="radio" name="hire" value="Not sure">
+                <label >Not sure</label>
+            </span>
+        </div>
+
+        <div class="rate">
+            <p>How would you rate it on a scale from 1 to 5?</p>
+           <div class="labels">
+               <span>1</span>
+               <span>2</span>
+               <span>3</span>
+               <span>4</span>
+               <span>5</span>
+           </div>
+            <input type="range" min="1" max="5" value="5">
+            
+        </div>
+
+        <div class="checkbox">
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <span>
+                <input value="" type="checkbox">
+                <label >Design</label>
+            </span>
+            <span>
+                <input value="Structure" type="checkbox">
+                <label >Structure</label>
+            </span>
+            <span>
+                <input value="Projects" type="checkbox">
+                <label >Projects</label>
+            </span>
+            <span>
+                <input value="Info" type="checkbox">
+                <label >Info</label>
+            </span>
+        </div>
+
+        <div class="comments">
+            <p>Any comments or suggestions?</p>
+            <textarea></textarea>
+        </div>
+
+        <button><i class="fas fa-paper-plane"></i>Submit</button>
+
+        
+            
+
+        </form>
+    </div>
+    
+</body>
+</html>

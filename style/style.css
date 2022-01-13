@@ -1,0 +1,209 @@
+/*Whole page*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../img/background2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+}
+
+/*Header*/
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:2vh;
+    margin-top:2vh;
+    height:10vh;
+}
+.header h1{
+    font-size:5vh;
+}
+.header p {
+    font-size:1.5vh;
+}
+@media(max-width:860px){
+    .header{
+        height:15vw;
+    }
+    .header h1{
+        font-size:6vw;
+    }
+    .header p {
+        font-size:2vw;
+    }
+}
+
+
+/*Survey part*/
+.survey{
+    background-color:#06131ae1;
+
+    height:100%;
+    padding-top:2vh;
+    padding-bottom:1vh;
+    width:80vh;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survey form p{
+    font-size:2vh;
+    margin-top:2vh;
+}
+
+form{
+    width:60vh;
+}
+.name,
+.email,
+.age,
+.hire,
+.checkbox,
+.role,
+.rate,
+.comments{
+    margin-top:2vh;
+    margin-bottom:2vh;
+}
+input,
+select{
+    width:60vh;
+    padding-left:1vh;
+    padding-right:1vh;
+    height:4vh;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    margin-top:1vh;
+    font-size:1.52vh;
+
+}
+input[type="radio"],
+input[type="checkbox"]{
+    width:2vh;
+}
+.hire>span{
+    display:flex;
+    flex-direction: row;
+}
+label{
+    font-size:2vh;
+    margin-left:0.5vh;
+    margin-top:1.3vh;
+}
+.rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:2vh;
+}
+.rate>p{
+    align-self: start;
+    margin-bottom:1vh;
+    margin-left:0;
+}
+input[type="range"]{
+    width:30vh;
+}
+.labels{
+    margin-left:0.4vh;
+    display:flex;
+    flex-direction: row;
+    gap:6.3vh;
+}
+.checkbox>span{
+    display:flex;
+    flex-direction: row;
+}
+textarea{
+    width:60vh;
+    height:10vh;
+    margin-top:1vh;
+    border-radius:10px;
+    padding:10px;
+}
+button{
+    width:60vh;
+    height:5vh;
+    border:none;
+    border-radius: 10px;
+    background-color:rgb(70, 172, 70);
+    font-family: 'Oswald', sans-serif;
+    font-size:2vh;
+    color:white;
+    margin-top:2vh;
+    margin-bottom:2vh;
+}
+i{
+    margin-right:1vh;
+}
+
+@media(max-width: 860px){
+    .survey{
+        align-items: start;
+        width:100%;
+    }
+    form{
+        width:100%;
+    }
+    form div,
+    form button{
+        margin-left:10vw;
+        margin-right:10vw;
+    }
+    .survey form p{
+        font-size:2.5vw;
+        margin-top:3vw;
+    }
+    input,
+    select,
+    textarea,
+    button{
+        width:80vw;
+        font-size:2vw;
+        height:5vw;
+    }
+    button{
+        font-size:3vw;
+    }
+    input[type="radio"],
+    input[type="checkbox"]{
+        width:3vw;
+}
+    label{
+        font-size:2.5vw;
+        margin-top:1.6vw;
+        
+    }
+    input[type="range"]{
+        width:40vw;
+    }
+    .labels{
+        width:40vw;
+        margin-left:0.4vw;
+        display:flex;
+        flex-direction: row;
+        gap:8.3vw;
+    }
+    .labels>span{
+        font-size:2.5vw;
+    }
+    textarea{
+        height:15vw;
+    }
+}
+@media(max-width: 400px){
+    .labels{
+        width:45vw;
+        gap:7.3vw;
+    }
+}
