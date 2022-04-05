@@ -1,0 +1,338 @@
+@charset "UTF-8";
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  height: 10vh;
+}
+
+.header h1 {
+  font-size: 5vh;
+}
+
+.header p {
+  font-size: 1.8vh;
+}
+
+@media (max-width: 860px) {
+  .header {
+    height: 15vw;
+  }
+  .header h1 {
+    font-size: 6vw;
+  }
+  .header p {
+    font-size: 2vw;
+  }
+}
+
+.survey {
+  background-color: #06131ae1;
+  height: 100%;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  width: 80vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.survey input,
+.survey select {
+  width: 60vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  height: 4vh;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 1vh;
+  font-size: 1.52vh;
+}
+
+.survey input[type="radio"],
+.survey input[type="checkbox"] {
+  width: 2vh;
+}
+
+.survey form {
+  width: 60vh;
+}
+
+.survey form label {
+  font-size: 2vh;
+  margin-left: 0.5vh;
+  margin-top: 1.3vh;
+}
+
+.survey form p {
+  font-size: 2vh;
+  margin-top: 2vh;
+}
+
+.survey form .hire > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.survey form .checkbox > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.survey form textarea {
+  width: 60vh;
+  height: 10vh;
+  margin-top: 1vh;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.survey form button {
+  width: 60vh;
+  height: 5vh;
+  border: none;
+  border-radius: 10px;
+  background-color: #46ac46;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2vh;
+  color: white;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.survey form i {
+  margin-right: 1vh;
+}
+
+.survey form div {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.survey form div fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.survey form div fieldset .star-cb-group {
+  font-size: 0;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.survey form div fieldset .star-cb-group * {
+  font-size: 4vh;
+}
+
+.survey form div fieldset .star-cb-group > input {
+  display: none;
+}
+
+.survey form div fieldset .star-cb-group > input + label {
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.survey form div fieldset .star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "☆";
+  color: white;
+}
+
+.survey form div fieldset .star-cb-group > input:checked ~ label:before, .survey form div fieldset .star-cb-group > input + label:hover ~ label:before, .survey form div fieldset .star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #0060df;
+  text-shadow: 0 0 1px #333;
+}
+
+.survey form div fieldset .star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: .5em;
+  margin-left: -.5em;
+}
+
+.survey form div fieldset .star-cb-group > .star-cb-clear + label:before {
+  width: .5em;
+}
+
+.survey form div fieldset .star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: white;
+  text-shadow: none;
+}
+
+.survey form div fieldset .star-cb-group:hover > input + label:hover ~ label:before, .survey form div fieldset .star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #0060df;
+  text-shadow: 0 0 1px #333;
+}
+
+@media (max-width: 860px) {
+  .survey {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: 100%;
+  }
+  .survey form {
+    width: 100%;
+  }
+  .survey form div fieldset .star-cb-group * {
+    font-size: 6vw;
+  }
+  .survey form label {
+    font-size: 2.5vw;
+    margin-top: 1.6vw;
+  }
+  .survey form div, .survey form button {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .survey form p {
+    font-size: 2.5vw;
+    margin-top: 3vw;
+  }
+  .survey form input,
+  .survey form select,
+  .survey form textarea,
+  .survey form button {
+    width: 80vw;
+    font-size: 2vw;
+    height: 5vw;
+  }
+  .survey form textarea {
+    height: 15vw;
+  }
+  .survey form button {
+    font-size: 3vw;
+  }
+  .survey form input[type="radio"],
+  .survey form input[type="checkbox"] {
+    width: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .survey {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    width: 100%;
+  }
+  .survey form {
+    width: 100%;
+  }
+  .survey form div fieldset .star-cb-group * {
+    font-size: 6vw;
+  }
+  .survey form label {
+    font-size: 2.5vw;
+    margin-top: 1.6vw;
+  }
+  .survey form div, .survey form button {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .survey form p {
+    font-size: 2.5vw;
+    margin-top: 3vw;
+  }
+  .survey form input,
+  .survey form select,
+  .survey form textarea,
+  .survey form button {
+    width: 80vw;
+    font-size: 2vw;
+    height: 5vw;
+  }
+  .survey form textarea {
+    height: 15vw;
+  }
+  .survey form button {
+    font-size: 3vw;
+  }
+  .survey form input[type="radio"],
+  .survey form input[type="checkbox"] {
+    width: 3vw;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

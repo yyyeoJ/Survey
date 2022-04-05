@@ -1,0 +1,29 @@
+@import './variables';
+
+.header{
+    @include flexCenter(column,center,center);
+    margin-bottom:2vh;
+    margin-top:2vh;
+    height:10vh;
+
+    h1{
+        font-size:5vh;
+    }
+    p{
+        font-size:1.8vh;
+    }
+}
+
+@media(max-width:860px){
+    
+    .header{
+        height:15vw;
+        
+        h1{
+            font-size:6vw;
+        }
+        p{
+            font-size:2vw;
+        }
+    }
+}
