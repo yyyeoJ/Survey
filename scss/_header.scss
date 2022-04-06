@@ -27,3 +27,17 @@
         }
     }
 }
+
+@media(max-width:500px){
+    
+    .header{
+        height:30vw;
+        
+        h1{
+            font-size:11vw;
+        }
+        p{
+            font-size:4vw;
+        }
+    }
+}

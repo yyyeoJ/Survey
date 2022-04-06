@@ -152,7 +152,7 @@
 
             label{
                 font-size:2.5vw;
-                margin-top:1.6vw;  
+                margin-top:3vw;  
             }
 
             div,button{
@@ -169,7 +169,7 @@
             button{
                 width:80vw;
                 font-size:2vw;
-                height:5vw;
+                height:8vw;
             }
             textarea{
                 height:15vw;
@@ -189,50 +189,44 @@
 
 @media(max-width: 500px){
     .survey{
-        align-items: start;
-        width:100%;
-
         form{
-            width:100%;
-
+            @include flexCenter(column,center,center);
             div{
+                margin-left:10vw;
+                margin-right:10vw;
                 fieldset{
                     .star-cb-group * {
-                        font-size: 6vw;
+                        font-size: 10vw;
                     }
                 }
             }
 
             label{
-                font-size:2.5vw;
-                margin-top:1.6vw;  
+                font-size:5vw;
+                margin-top:2.5vh; 
             }
 
-            div,button{
-                margin-left:10vw;
-                margin-right:10vw;
-            }
             p{
-                font-size:2.5vw;
+                font-size:6vw;
                 margin-top:3vw;
             }
             input,
             select,
             textarea,
             button{
-                width:80vw;
-                font-size:2vw;
-                height:5vw;
-            }
-            textarea{
+                width:90vw;
+                font-size:4vw;
                 height:15vw;
             }
+            textarea{
+                height:40vw;
+            }
             button{
-                font-size:3vw;
+                font-size:5vw;
             }
             input[type="radio"],
             input[type="checkbox"]{
-                width:3vw;
+                width:5vw;
             }
         }
 
